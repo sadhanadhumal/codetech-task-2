@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet"href="style.css"/>
+</head>
+<body>
+    <div class="portfolio-container">
+        <ul class="navlist">
+            <li><a href="a">Home</a></li>
+            <li><a href="a">Work</a></li>
+            <li><a href="a">About</a></li>
+            <li><a href="a">Project</a></li>
+            <li><a href="a">service</a></li>
+            </ul>
+            <div class="left-container"></div>
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-codepen"></i>
+                <div:class="content">
+                    <p class="intro">Hi! I am<span>Sadhana Dhumal</span></p>
+                    <h1>Web Developement</h1>
+                    <p class="detail">lorem</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, soluta ipsum. Praesentium explicabo hic cum sequi itaque nihil quas. Voluptate deleniti numquam sunt veritatis? Quae ad commodi ea vero nostrum!</p>
+                    <div class="btn-container">
+                        <button>Hire me</button>
+                        <button>View me</button>
+                    </div>
+                    <div class="right-container"></div>
+                        <div class="desigen"></div>
+                        <div class="circle"></div>
+    </div>
+    
+</body>
+</html>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'poppins',sans-serif;
+}
+.portfolio-conatiner{
+    min-height:100vh;
+    width:100%;
+    display:flex;
+}
+.navlist{
+    display:flex;
+    gap:3.5rem;
+    height:15vh;
+    width:100vh;
+    justify-content:center;
+    align-items: center;
+    position:fixed;
+
+}
+.navlist li{
+    list-style:none;
+}
+.navlist li a{
+    text-decoration:none;
+    text-transform:uppercase;
+    font-size:1rem;
+    color:#fff;
+
+}
+.left-container,.right-container{
+    height:100vh;
+    display:flex;
+    align-items:center;
+}
+.left-container{
+    background:#262525;
+    width:70%
+    padding-left:3rem;
+}
+.right-container{
+    background-color:linear-gradient(-45deg #262525,#3877ff 70%);
+    width:30%;
+}
+.icon{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-item:center;
+    gap:3rem;
+}
+.content{
+    margin-left:4rem;
+}
+.content.intro span{
+    color:#5db9ee;
+}
+.content.intro{
+    font-size:1.5rem;
+    color:#fff;
+}
+.content h1{
+    font-size:4rem;
+    color:#fff;
+    max-width:38rem;
+    margin:1.1rem 0 3rem 0;
+    line-height:1.8rem;
+}
+.btn-container button{
+    border:1rem solid#5db9ee;
+    font: size 1.1rem;padding:.8rem 1.5rem;
+    border-radius:5rem;
+    cursor:pointer;
+    transition-effect:.5s ease;
+}
+button:nth-child(1){
+    background:#5db9ee;
+    color:#262525;
+
+}
+button:nth-child(2){
+    background:transperant;
+    color:#5db9ee;
+    margin-left:2rem;
+}
+button:nth-child(1):hover{
+    background:transperant;
+    color:#5db9ee;
+}
+button:nth-child(2):hover{
+    background:transperant;
+    color:#262525;
+}
+.icon:fa-brands hover{
+    cursor:pointer;
+    background:linear-gradient(#fff,#3877ff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transperant;
+}
+.desigen-circle{
+    aspect-ratio:1;
+    position:absolute;
+    border-radius:50%;
+    top:50%;
+    left:70%;
+    transform:translate(-50%,-50%);
+}
+.circle:nth-child(1){
+    background:linear-gradient(90deg,transperant 50%,#262525 50%);
+    width;38rem;
+}
+.circle:nth-child(2){
+    width:30rem;
+    background-image:url("image/profile.jpg");
+    background-size 100%;
+    background-repeat:no-repeat;
+    border:.1rem solid white;
+    box-shadow:
+    0 0 1rem #fff;
+    inset 0 0 1rem #fff;
+    0 0 2rem #3877ff;
+    inset 0 0 2rem #3877ff;
+    0 0 4rem #3877ff;
+    inset 0 0 4rem #3877ff;
+
+}
+.navlist li a::after{
+    content:"";
+    position:absolute;
+    background:#fff;
+    height::1rem;
+}
