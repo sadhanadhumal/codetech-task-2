@@ -1,7 +1,7 @@
 Name:Sadhana dhumal
 Company:CODETECH IT SOLUTIONS
 ID:CT6FWD624
-Domain:Web development
+Domain:Frontend development
 Duration:25june to 10Aug
 Mentor:Neela Santosh Kumar
 
